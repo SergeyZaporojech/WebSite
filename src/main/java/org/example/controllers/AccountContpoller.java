@@ -1,4 +1,4 @@
-package org.example.controller;
+package org.example.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.example.dto.account.AuthResponseDto;

@@ -55,8 +55,7 @@ public class JwtService {
                 .setSigningKey(jwtSecret)
                 .parseClaimsJws(token)
                 .getBody();
-
-        return claims.getSubject().split(",")[1];
+        return claims.get("email").toString();
     }
     // метод повертає дату до якої живе токен
     public Date getExpirationDate(String token) {
